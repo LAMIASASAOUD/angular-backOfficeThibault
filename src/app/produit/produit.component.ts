@@ -14,10 +14,8 @@ export class ProduitComponent implements OnInit {
   constructor(private api: ApiService ,private route: Router) { }
   tabProduit: any;
   dataSource: any;
-  public tabtest:string [] =['price'];
-
   displayedColumns:string []= ['name','price','sale'];
-  displayedColumnsPromotion:any[] = ['price_on_sale','quantity_stock','discount'];
+  displayedColumnsPromotion:any[] = ['price_on_sale','quantity_stock'];
   tabFilter: any;
 
   functionColumsPromotion(promo:boolean)
@@ -30,10 +28,8 @@ export class ProduitComponent implements OnInit {
       
       }
     else {
-      
-
-      console.log(this.displayedColumns);
-    
+      this.displayedColumns.push(...this.displayedColumnsPromotion)
+      console.log(this.displayedColumnsPromotion);
     } 
 
   }
