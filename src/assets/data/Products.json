@@ -11,6 +11,7 @@
     "unit": "kg",
     "name": "Moules de pêche",
     "quantity_stock": 20,
+    
     "quantity_sold": 50
 },
 {
@@ -24,6 +25,7 @@
     "price": 7,
     "price_on_sale": 7,
     "sale": false,
+    "pourcentage_de_promotion":10,
     "availability": true,
     "quantity_stock": 60,
     "quantity_sold": 100

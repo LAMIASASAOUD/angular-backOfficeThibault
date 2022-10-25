@@ -13,6 +13,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ErrComponent } from './err/err.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatMenuModule} from '@angular/material/menu';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import {MatMenuModule} from '@angular/material/menu';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     MatCardModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatMenuModule,
